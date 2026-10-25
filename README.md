@@ -124,3 +124,11 @@ Etapa 6: revisá docs/03_pendientes_antes_de_publicar.md, decime qué bloqueante
 ## Antes de publicar
 
 Revisar `docs/03_pendientes_antes_de_publicar.md`. Los ítems marcados con **B** bloquean la publicación.
+
+## Promo de suscripción
+
+- Se configura en `data/suscripcion.json` → `promo`: `descuento_pct` (hoy 40), `cierre` (fecha y hora reales de fin, hora de Argentina) y `activa`.
+- Se muestra el precio sugerido tachado y el precio de suscripción resaltado, en la ficha, en "Completá el ciclo" y en la barra fija del celular.
+- La cuenta regresiva (horas, minutos y segundos) cuenta hasta `cierre`, igual para todos los visitantes. Al llegar a cero, el descuento deja de mostrarse y los precios vuelven al sugerido.
+- Sin fecha de cierre (`"cierre": "pendiente"`), el descuento queda fijo y no hay contador.
+- Los planes de Mercado Pago tienen que crearse con el precio de suscripción, no con el sugerido.

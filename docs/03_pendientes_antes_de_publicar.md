@@ -63,3 +63,6 @@
 | 35 | Sitemap: necesita el dominio (#34). Cargar `seo.url_publica` en `data/suscripcion.json` y sumar `Sitemap:` en `robots.txt` | — |
 | 36 | Bloque "Blindaje y Bienestar: la misma molécula, dos historias" de la web expo: **no se usa**, porque las notas de Colágeno ACTION piden no mostrarlo nunca en la misma pieza que SKIN/GLOW. Si los dueños lo quieren, validar con regulatorio | — |
 | 37 | "Quiénes somos": "Planta propia en Saladillo", ISO 22000 y RNE/RNPA quedan ocultos hasta tener el documento (#6 y #22) | B para mostrarlos |
+| 38 | **Promo de suscripción 40%** (aprobada el 24/10/2026): crear los planes de Mercado Pago con el precio de suscripción (sugerido × 0,60, redondeado hacia arriba), no con el sugerido | B para cobrar automático |
+| 39 | Definir si el 40% se mantiene en **todos** los cobros del plan o solo en los que se hagan mientras dure la promo. La pregunta frecuente está cargada en "pendiente" (oculta) hasta definirlo | B |
+| 40 | Fecha de cierre de la promo (`promo.cierre` en `data/suscripcion.json`): hoy 25/10/2026 23:00 (hora Argentina). Al llegar a cero, el contador y el descuento desaparecen solos. Para extenderla, cambiar la fecha | — |

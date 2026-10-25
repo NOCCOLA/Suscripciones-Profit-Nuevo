@@ -1,8 +1,26 @@
 {
-  "_leeme": "Configuración y textos de la landing de suscripción. Los valores 'pendiente' no se muestran. 'planes' tiene un link de plan de suscripción de Mercado Pago por producto y por frecuencia (se crean sin código en Mercado Pago > Suscripciones > Planes). Mientras un link esté 'pendiente', el botón de suscripción abre WhatsApp con el pedido armado. Sin descuentos ni regalos: necesitan OK de regulatorio (Disp. ANMAT 4980/05, Anexo IV, ítem 5).",
-  "version": "20261024",
+  "_leeme": "Configuración y textos de la landing de suscripción. Los valores 'pendiente' no se muestran. 'planes' tiene un link de plan de suscripción de Mercado Pago por producto y por frecuencia (se crean sin código en Mercado Pago > Suscripciones > Planes). Mientras un link esté 'pendiente', el botón de suscripción abre WhatsApp con el pedido armado. Los planes de Mercado Pago se crean con el precio de suscripción (con el descuento de 'promo' aplicado). Sin regalos (Disp. ANMAT 4980/05, Anexo IV, ítem 5).",
+  "version": "20261025",
   "producto_inicial": "creatina-monohidrato-300g",
   "frecuencias_dias": [30, 60],
+  "promo": {
+    "_leeme": "Descuento de suscripción aprobado por los dueños y regulatorio el 24/10/2026. Se aplica sobre precio.pvp_sugerido y se redondea hacia arriba. 'cierre' es la fecha y hora reales en que termina la promoción, igual para todos los visitantes (hora de Argentina, -03:00). Al llegar al cierre, el contador desaparece y los precios vuelven al sugerido. Para una promo sin fecha de cierre, poner 'cierre': 'pendiente' (no se muestra contador). Para apagarla, 'activa': false.",
+    "activa": true,
+    "descuento_pct": 40,
+    "cierre": "2026-10-25T23:00:00-03:00",
+    "textos": {
+      "barra": "{pct}% OFF suscribiéndote · Termina en",
+      "barra_sin_cierre": "{pct}% OFF suscribiéndote a cualquier producto",
+      "etiqueta_hero": "{pct}% OFF suscribiéndote",
+      "etiqueta_precio": "{pct}% OFF",
+      "precio_anterior": "Precio sugerido",
+      "precio_microcopy": "Precio de suscripción por envío",
+      "termina": "La promoción termina en",
+      "horas": "h",
+      "minutos": "min",
+      "segundos": "s"
+    }
+  },
   "planes": {
     "creatina-monohidrato-300g": { "30": "pendiente", "60": "pendiente" },
     "creatina-monohidrato-150g": { "30": "pendiente", "60": "pendiente" },
@@ -92,7 +110,7 @@
       "pasos": [
         { "titulo": "Elegís", "texto": "Producto, presentación y sabor." },
         { "titulo": "Definís la frecuencia", "texto": "Cada 30 o cada 60 días." },
-        { "titulo": "Pagás con Mercado Pago", "texto": "El cobro se repite en cada período, al precio sugerido." },
+        { "titulo": "Pagás con Mercado Pago", "texto": "El cobro se repite en cada período, al precio sugerido.", "texto_promo": "El cobro se repite en cada período, con {pct}% de descuento sobre el precio sugerido." },
         { "titulo": "La cancelás cuando quieras", "texto": "Das de baja la suscripción desde tu cuenta de Mercado Pago, sin permanencia." },
         { "titulo": "Envío", "texto": "pendiente — definir quién despacha, plazos y costo de envío" }
       ]
@@ -185,8 +203,9 @@
       "titulo": "Preguntas frecuentes",
       "lista": [
         { "p": "¿Cómo funciona la suscripción?", "r": "Elegís el producto y la frecuencia, te suscribís con Mercado Pago y el cobro se repite cada 30 o 60 días." },
+        { "p": "¿El descuento se mantiene en cada envío?", "r": "pendiente", "r_promo": "pendiente — confirmar si el {pct}% se mantiene en todos los cobros del plan o solo mientras dure la promoción" },
         { "p": "¿La puedo cancelar?", "r": "Sí. La das de baja cuando quieras desde tu cuenta de Mercado Pago, en la sección Suscripciones." },
-        { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido." },
+        { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido.", "r_promo": "Sí. Suscribiéndote tenés {pct}% de descuento sobre el precio sugerido mientras dure la promoción." },
         { "p": "¿Cuándo llega y cuánto cuesta el envío?", "r": "pendiente" },
         { "p": "¿Dónde lo compro si no me quiero suscribir?", "r": "En la tienda oficial de Mercado Libre y en farmacias y dietéticas de todo el país." },
         { "p": "¿Cómo se toma?", "r": "Seguí el modo de uso que figura en el rótulo de cada producto." },

@@ -509,3 +509,31 @@ body.has-sticky .wa-float { bottom: calc(80px + env(safe-area-inset-bottom)); }
   .mv--full .idx { position: static; display: flex; align-items: baseline; gap: 18px; }
   .mv--full .idx .t { margin-top: 0; }
 }
+
+/* ---------- Promo de suscripción: precio tachado, precio nuevo y cuenta regresiva ----------
+   Misma línea visual: sin cajas de color ni destellos. El acento es el color de la línea elegida. */
+.topbar--promo { font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 4px 10px; }
+.cd { display: inline-flex; align-items: baseline; gap: 2px; font-variant-numeric: tabular-nums; letter-spacing: 0; text-transform: none; }
+.cd b { font-weight: 900; }
+.cd i { font-style: normal; font-weight: 600; font-size: .8em; opacity: .6; margin-right: 6px; }
+.cd i:last-child { margin-right: 0; }
+.hero__promo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; border-top: 1px solid var(--rd); border-bottom: 1px solid var(--rd); padding: 14px 0; max-width: 520px; }
+.hero__promo > .lbl:first-child { color: var(--acento-osc); }
+.hero__termina { color: var(--w40); }
+.hero__promo .cd { font-size: 18px; color: #fff; }
+.precio-promo { display: grid; gap: 8px; }
+.precio__antes { display: flex; align-items: baseline; gap: 10px; color: var(--i40); }
+.precio__antes s { font-size: 15px; font-weight: 600; text-decoration-thickness: 1px; }
+.precio-promo .precio { align-items: center; }
+.precio__tag {
+  font-weight: 800; font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--acento); border: 1px solid currentColor; padding: 5px 9px; line-height: 1;
+}
+.precio__micro { font-size: 12px; color: var(--i70); }
+.cuenta { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 14px; border-top: 1px solid var(--r); border-bottom: 1px solid var(--r); padding: 12px 0; margin-top: 4px; }
+.cuenta .lbl { color: var(--i40); }
+.cuenta .cd { font-size: 20px; }
+.card__precio { font-size: 14px; }
+.card__precio s, .sticky__txt s { color: var(--i40); font-weight: 400; margin-right: 4px; }
+.card__precio strong { font-weight: 800; }
+.sticky__txt strong + s, .sticky__txt span strong { display: inline; font-size: inherit; text-transform: none; font-weight: 800; color: var(--ink); }

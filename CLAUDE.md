@@ -69,6 +69,7 @@ Los suplementos dietarios se rigen por el Código Alimentario Argentino. Su publ
    - "Alta absorción", "mejor descanso", "mayor concentración", "antiarrugas" o "rejuvenece".
    - Superioridad frente a otra marca.
 4. **Prohibido** hacer concursos, sorteos o regalos, o dar "beneficios de cualquier índole" con suplementos (Anexo IV, ítem 5). **No copiar el "regalo en cada caja" de Aqualo.** Los descuentos de suscripción o de combos no se implementan sin el OK de regulatorio.
+   - **Aprobado el 24/10/2026 (dueños y regulatorio):** 40% de descuento sobre el PVP sugerido para la suscripción, configurado en `data/suscripcion.json` → `promo`. Se muestra el sugerido tachado y el precio de suscripción resaltado.
 5. **"Una cápsula por día"** solo donde el rótulo lo respalde. ONE trae 60 cápsulas para 30 porciones, así que en ese caso **no** se puede decir.
 6. **Gelatina 100% Pura no es un suplemento** según su rótulo: no usar lenguaje de suplementación en su ficha.
 7. No dirigirse a menores, embarazadas ni personas en lactancia.
@@ -89,6 +90,7 @@ Los suplementos dietarios se rigen por el Código Alimentario Argentino. Su publ
 **No**:
 
 - Contadores de stock.
+- Cuentas regresivas que se reinician por visitante. Solo se permite contar hasta una fecha y hora reales de cierre, iguales para todos (`promo.cierre`); al llegar a cero, la promo deja de aplicarse.
 - "X personas comprando ahora".
 - Banners de descuentos que no existen.
 - Reseñas inventadas o reescritas.
@@ -103,7 +105,7 @@ El sitio **nunca** menciona a Grupo Alfa ni a sus socios. Todo se comunica como 
 
 ## 8. Precios y datos
 
-- Se publica solo `precio.pvp_sugerido`. **Nunca** el precio comercio. Nunca un precio por debajo del PVP sugerido, porque protege a farmacias y dietéticas.
+- Se publica solo `precio.pvp_sugerido`. **Nunca** el precio comercio. Nunca un precio por debajo del PVP sugerido, porque protege a farmacias y dietéticas. Única excepción: el precio de suscripción con la promo aprobada (ver sección 5.4).
 - La regla del PVP es precio comercio × 1,21 × 1,45. Los precios del kit son de agosto/septiembre de 2026: hay que confirmar la lista vigente.
 - El Whey tiene una alerta de precio en `notas`: no mostrar su precio hasta que se resuelva.
 - WhatsApp comercial: +54 9 11 6027-7603.

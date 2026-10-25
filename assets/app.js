@@ -167,6 +167,64 @@
     return p.precio && p.precio.publicar !== false && typeof p.precio.pvp_sugerido === "number";
   }
 
+  // Promo de suscripción vigente, o null. Tiene fecha de cierre real (igual para todos): pasada esa hora, deja de aplicarse.
+  function promo() {
+    var pr = DATA.sus.promo;
+    if (!pr || !pr.activa || !(pr.descuento_pct > 0)) return null;
+    var cierre = pend(pr.cierre) ? null : new Date(pr.cierre);
+    if (cierre && isNaN(cierre.getTime())) cierre = null;
+    if (cierre && Date.now() >= cierre.getTime()) return null;
+    return { pct: pr.descuento_pct, cierre: cierre, t: pr.textos };
+  }
+
+  function precioSuscripcion(p) {
+    var pr = promo();
+    var base = p.precio.pvp_sugerido;
+    return pr ? Math.ceil(base * (1 - pr.pct / 100)) : precioRedondeado(base);
+  }
+
+  // Precio de suscripción con el sugerido tachado cuando hay promo. Formato compacto para tarjetas y barra fija.
+  function precioCompacto(p) {
+    var pr = promo();
+    return (pr ? "<s>" + fmtPrecio(p.precio.pvp_sugerido) + "</s> " : "") + "<strong>" + fmtPrecio(precioSuscripcion(p)) + "</strong>";
+  }
+
+  function restante() {
+    var pr = promo();
+    return pr && pr.cierre ? Math.max(0, pr.cierre.getTime() - Date.now()) : 0;
+  }
+
+  function cuentaHtml() {
+    var pr = promo();
+    var ms = restante();
+    var s = Math.floor(ms / 1000);
+    var dos = function (n) { return String(n).padStart(2, "0"); };
+    return '<span class="cd" role="timer">' +
+      "<b>" + dos(Math.floor(s / 3600)) + "</b><i>" + esc(pr.t.horas) + "</i>" +
+      "<b>" + dos(Math.floor(s % 3600 / 60)) + "</b><i>" + esc(pr.t.minutos) + "</i>" +
+      "<b>" + dos(s % 60) + "</b><i>" + esc(pr.t.segundos) + "</i></span>";
+  }
+
+  // Un solo reloj para todos los contadores de la página. Al llegar a cero se vuelve a dibujar todo sin la promo.
+  function initCuenta() {
+    var pr = promo();
+    if (!pr || !pr.cierre) return;
+    var timer = setInterval(function () {
+      if (!promo()) {
+        clearInterval(timer);
+        safe(renderTopbar, "barra superior");
+        safe(renderHero, "hero");
+        safe(renderComo, "cómo funciona");
+        safe(renderFaq, "preguntas");
+        select(state.slug);
+        document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("in"); });
+        return;
+      }
+      var html = cuentaHtml();
+      document.querySelectorAll("[data-countdown]").forEach(function (el) { el.innerHTML = html; });
+    }, 1000);
+  }
+
   function packshot(p, w) {
     if (pend(p.packshot)) return null;
     var base = p.packshot.replace(/^\//, "").replace(/\.png$/i, "");
@@ -252,7 +310,7 @@
     var links = t.menu.map(function (m) { return '<a href="#' + esc(m.ancla) + '">' + esc(m.texto) + "</a>"; }).join("");
     slot("menu").innerHTML = links;
     slot("menu-cta").textContent = t.menu_cta;
-    slot("topbar").textContent = t.barra_superior;
+    renderTopbar();
 
     var mm = slot("menu-mobile");
     mm.innerHTML = t.menu.map(function (m) { return '<a class="mm__item" href="#' + esc(m.ancla) + '">' + esc(m.texto) + "</a>"; }).join("") +
@@ -273,10 +331,21 @@
     onScroll();
   }
 
+  function renderTopbar() {
+    var pr = promo();
+    var bar = slot("topbar");
+    bar.classList.toggle("topbar--promo", !!pr);
+    if (!pr) { bar.textContent = DATA.sus.textos.barra_superior; return; }
+    bar.innerHTML = pr.cierre
+      ? '<span>' + esc(fill(pr.t.barra, { pct: pr.pct })) + '</span> <span data-countdown>' + cuentaHtml() + "</span>"
+      : esc(fill(pr.t.barra_sin_cierre, { pct: pr.pct }));
+  }
+
   // ---------- Secciones fijas ----------
 
   function renderHero() {
     var t = DATA.sus.textos.hero;
+    var pr = promo();
     var p = producto(DATA.sus.producto_inicial);
     var l = linea(p.linea);
     var dato = (p.datos_rotulo || [])[0];
@@ -286,6 +355,8 @@
           '<p class="lbl rv"><span class="dot"></span>' + esc(t.etiqueta) + "</p>" +
           '<h1 class="dsp hero__title rv">' + esc(DATA.marca.concepto_campana) + "</h1>" +
           '<p class="hero__sub rv">' + esc(t.bajada) + "</p>" +
+          (pr ? '<p class="hero__promo rv"><span class="lbl">' + esc(fill(pr.t.etiqueta_hero, { pct: pr.pct })) + "</span>" +
+            (pr.cierre ? '<span class="lbl hero__termina">' + esc(pr.t.termina) + '</span><span data-countdown>' + cuentaHtml() + "</span>" : "") + "</p>" : "") +
           '<div class="hero__acts rv">' +
             '<a class="btn btn--inv" href="#suscripcion">' + esc(t.boton) + "</a>" +
             '<a class="btn btn--gd" href="#como-funciona">' + esc(t.boton_secundario) + "</a>" +
@@ -332,8 +403,10 @@
     slot("como").innerHTML = seccion(t, "como-t",
       '<ol class="pasos rv">' +
         t.pasos.filter(function (p) { return !pend(p.texto); }).map(function (p, i) {
+          var pr = promo();
+          var texto = pr && p.texto_promo ? fill(p.texto_promo, { pct: pr.pct }) : p.texto;
           return '<li class="paso"><span class="cifra">' + String(i + 1).padStart(2, "0") + "</span><div>" +
-            '<h3 class="h3">' + esc(p.titulo) + "</h3><p>" + esc(p.texto) + "</p></div></li>";
+            '<h3 class="h3">' + esc(p.titulo) + "</h3><p>" + esc(texto) + "</p></div></li>";
         }).join("") +
       "</ol>");
   }
@@ -437,7 +510,10 @@
     var t = DATA.sus.textos.preguntas;
     slot("faq").innerHTML = seccion(t, "faq-t",
       '<div class="faq rv">' +
-        t.lista.filter(function (q) { return !pend(q.r); }).map(function (q) {
+        t.lista.map(function (q) {
+          var pr = promo();
+          return { p: q.p, r: pr && q.r_promo ? fill(q.r_promo, { pct: pr.pct }) : q.r };
+        }).filter(function (q) { return !pend(q.r); }).map(function (q) {
           return "<details><summary>" + esc(q.p) + "</summary><p>" + esc(q.r) + "</p></details>";
         }).join("") +
       "</div>");
@@ -626,9 +702,23 @@
         }).join("") +
       "</div></div>";
 
-    var precio = precioVisible(p)
-      ? '<p class="precio"><span class="cifra">' + fmtPrecio(p.precio.pvp_sugerido) + "</span><small>" + esc(t.precio_microcopy) + " · " + esc(fill(t.frecuencia_opcion, { n: state.freq }).toLowerCase()) + "</small></p>"
-      : '<p class="precio--consulta">' + esc(t.precio_no_disponible) + "</p>";
+    var pr = promo();
+    var cada = esc(fill(t.frecuencia_opcion, { n: state.freq }).toLowerCase());
+    var precio;
+    if (!precioVisible(p)) {
+      precio = '<p class="precio--consulta">' + esc(t.precio_no_disponible) + "</p>";
+    } else if (pr) {
+      // Precio sugerido tachado y precio de suscripción resaltado; el contador va debajo si la promo tiene cierre.
+      precio =
+        '<div class="precio-promo">' +
+          '<p class="precio__antes"><span class="lbl">' + esc(pr.t.precio_anterior) + "</span> <s>" + fmtPrecio(p.precio.pvp_sugerido) + "</s></p>" +
+          '<p class="precio"><span class="cifra">' + fmtPrecio(precioSuscripcion(p)) + '</span><span class="precio__tag">' + esc(fill(pr.t.etiqueta_precio, { pct: pr.pct })) + "</span></p>" +
+          '<p class="precio__micro">' + esc(pr.t.precio_microcopy) + " · " + cada + "</p>" +
+          (pr.cierre ? '<p class="cuenta"><span class="lbl">' + esc(pr.t.termina) + '</span><span data-countdown>' + cuentaHtml() + "</span></p>" : "") +
+        "</div>";
+    } else {
+      precio = '<p class="precio"><span class="cifra">' + fmtPrecio(p.precio.pvp_sugerido) + "</span><small>" + esc(t.precio_microcopy) + " · " + cada + "</small></p>";
+    }
 
     var mlUrl = p.compra && p.compra.modo === "ml" && !pend(p.compra.ml_url) ? p.compra.ml_url : null;
     var unaVez = mlUrl
@@ -732,7 +822,8 @@
         '<div class="card__body">' +
           '<span class="chip"><span class="dot"></span>' + esc(l.nombre) + " <small>" + esc(l.momento) + "</small></span>" +
           '<h3 class="h3">' + esc(x.nombre) + "</h3>" +
-          "<p>" + esc(x.variante) + (precioVisible(x) ? " · " + fmtPrecio(x.precio.pvp_sugerido) : "") + "</p>" +
+          "<p>" + esc(x.variante) + "</p>" +
+          (precioVisible(x) ? '<p class="card__precio">' + precioCompacto(x) + "</p>" : "") +
           '<button type="button" class="lnk" data-ciclo="' + esc(x.slug) + '">' + esc(t.boton) + " " + ARROW + "</button>" +
         "</div>" +
       "</div>";
@@ -769,7 +860,7 @@
     var t = DATA.sus.textos.selector;
     slot("sticky").innerHTML =
       '<div class="sticky__txt"><strong>' + esc(nombreCompleto(p)) + "</strong><span>" +
-        (precioVisible(p) ? fmtPrecio(p.precio.pvp_sugerido) + " · " + esc(fill(t.frecuencia_opcion, { n: state.freq }).toLowerCase()) : esc(t.precio_no_disponible)) +
+        (precioVisible(p) ? precioCompacto(p) + " · " + esc(fill(t.frecuencia_opcion, { n: state.freq }).toLowerCase()) : esc(t.precio_no_disponible)) +
       "</span></div>" +
       '<a class="btn' + (cta.wa ? " btn--wa" : "") + '" href="' + esc(cta.href) + '" target="_blank" rel="noopener" data-sticky-cta>' + esc(t.barra_fija_boton) + "</a>";
     slot("sticky").querySelector("[data-sticky-cta]").addEventListener("click", function () {
@@ -910,6 +1001,7 @@
     safe(initReveal, "revelado");
 
     select(slugInicial());
+    safe(initCuenta, "cuenta regresiva");
     safe(watchSticky, "barra fija");
     safe(renderSchema, "datos estructurados");
     safe(loadPixels, "píxeles");
