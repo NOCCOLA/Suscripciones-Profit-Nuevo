@@ -1,5 +1,6 @@
 {
   "_leeme": "Configuración y textos de la landing de suscripción. Los valores 'pendiente' no se muestran. 'planes' tiene un link de plan de suscripción de Mercado Pago por producto y por frecuencia (se crean sin código en Mercado Pago > Suscripciones > Planes). Mientras un link esté 'pendiente', el botón de suscripción abre WhatsApp con el pedido armado. Sin descuentos ni regalos: necesitan OK de regulatorio (Disp. ANMAT 4980/05, Anexo IV, ítem 5).",
+  "version": "20261024",
   "producto_inicial": "creatina-monohidrato-300g",
   "frecuencias_dias": [30, 60],
   "planes": {
@@ -25,15 +26,25 @@
     "gelatina-pura-sin-sabor-500g": { "30": "pendiente", "60": "pendiente" }
   },
   "textos": {
-    "barra_superior": "Suscripción PROFIT® · Lo recibís cada 30 o 60 días · Pagás con Mercado Pago",
+    "barra_superior": "Comprá en la tienda oficial de Mercado Libre o en farmacias y dietéticas de todo el país",
+    "menu": [
+      { "texto": "Productos por línea", "ancla": "lineas" },
+      { "texto": "Por dónde empezar", "ancla": "empezar" },
+      { "texto": "Dónde comprar", "ancla": "una-vez" },
+      { "texto": "Quiero vender PROFIT", "ancla": "quiero-vender" }
+    ],
+    "menu_cta": "Suscribirme",
     "hero": {
-      "etiqueta": "Suscripción",
+      "etiqueta": "Suscripción PROFIT®",
       "bajada": "Elegí tu producto y cada cuánto lo querés recibir. Se paga con Mercado Pago y la gestionás desde tu cuenta.",
-      "boton": "Elegir mi producto",
+      "boton": "Armar mi suscripción",
       "boton_secundario": "Cómo funciona"
     },
     "por_donde_empezar": {
-      "titulo": "¿Por dónde empezar?",
+      "numero": "01",
+      "etiqueta": "Por dónde empezar",
+      "titulo": "¿Qué necesitás resolver?",
+      "boton": "Ver",
       "opciones": [
         { "necesidad": "Estoy empezando y no sé qué tomar", "respuesta": "Creatina y proteína.", "linea": "fuerza" },
         { "necesidad": "Entreno varias veces por semana", "respuesta": "Magnesio y glutamina.", "linea": "recuperacion" },
@@ -43,6 +54,8 @@
       "_validar_regulatorio": "Copy de la web expo pendiente de validación (pendientes #9). La frase 'Es lo que más evidencia tiene y lo que mejor funciona' quedó afuera hasta que la aprueben."
     },
     "selector": {
+      "numero": "02",
+      "etiqueta": "Suscripción",
       "titulo": "Armá tu suscripción",
       "paso_linea": "Línea",
       "paso_producto": "Producto",
@@ -59,35 +72,91 @@
       "link_una_vez": "¿Preferís comprar una sola vez?",
       "foto_pendiente": "FOTO REAL PENDIENTE",
       "packshot_pendiente": "PACKSHOT EN REVISIÓN",
-      "modo_de_uso": "Cómo se toma",
+      "barra_fija_boton": "Suscribirme",
+      "franja_confianza": {
+        "elaborado": "Elaborado por",
+        "sello_gluten": "Libre de gluten",
+        "rnpa": "RNPA"
+      },
+      "que_tiene": "Qué tiene",
       "ingredientes": "Ingredientes",
-      "rnpa": "RNPA",
-      "barra_fija_boton": "Suscribirme"
+      "tabla_nutricional": "Información nutricional",
+      "como_se_toma": "Cómo se toma",
+      "registros": "Registros y rótulo",
+      "denominacion": "Denominación de venta"
     },
     "como_funciona": {
+      "numero": "03",
+      "etiqueta": "Suscripción",
       "titulo": "Cómo funciona",
       "pasos": [
-        { "cifra": "1", "titulo": "Elegís", "texto": "Producto, presentación y sabor." },
-        { "cifra": "2", "titulo": "Definís la frecuencia", "texto": "Cada 30 o cada 60 días." },
-        { "cifra": "3", "titulo": "Pagás con Mercado Pago", "texto": "El cobro se repite en cada período, al precio sugerido." },
-        { "cifra": "4", "titulo": "La cancelás cuando quieras", "texto": "Das de baja la suscripción desde tu cuenta de Mercado Pago, sin permanencia." },
-        { "cifra": "5", "titulo": "Envío", "texto": "pendiente — definir quién despacha, plazos y costo de envío" }
+        { "titulo": "Elegís", "texto": "Producto, presentación y sabor." },
+        { "titulo": "Definís la frecuencia", "texto": "Cada 30 o cada 60 días." },
+        { "titulo": "Pagás con Mercado Pago", "texto": "El cobro se repite en cada período, al precio sugerido." },
+        { "titulo": "La cancelás cuando quieras", "texto": "Das de baja la suscripción desde tu cuenta de Mercado Pago, sin permanencia." },
+        { "titulo": "Envío", "texto": "pendiente — definir quién despacha, plazos y costo de envío" }
       ]
     },
     "cuando_se_toma": {
+      "numero": "04",
+      "etiqueta": "El ciclo",
       "titulo": "Cuándo se toma",
-      "bajada": "Cinco líneas, ordenadas por el ciclo del entrenamiento."
+      "bajada": "Cinco líneas, ordenadas por el ciclo del entrenamiento. El color no se eligió por gusto sino por orden.",
+      "aca": "Lo que elegiste"
     },
     "completa_el_ciclo": {
+      "numero": "05",
+      "etiqueta": "Venta cruzada",
       "titulo": "Completá el ciclo",
       "bajada": "Lo que va al lado de lo que elegiste.",
-      "boton": "Ver"
+      "boton": "Ver producto"
     },
     "opiniones": {
-      "titulo": "Opiniones en Mercado Libre",
+      "etiqueta": "Opiniones",
+      "titulo": "Lo que dicen en Mercado Libre",
       "link": "Ver en Mercado Libre"
     },
+    "lineas": {
+      "numero": "06",
+      "etiqueta": "Productos por línea",
+      "titulo": "Cada color hace un trabajo.",
+      "bajada": "Cinco líneas ordenadas por el ciclo del entrenamiento. Elegí la línea y vas directo a sus productos.",
+      "productos": "{n} productos",
+      "producto": "1 producto",
+      "boton": "Ver productos"
+    },
+    "marca": {
+      "numero": "07",
+      "etiqueta": "La marca",
+      "titulo": "Una marca para el que vuelve mañana.",
+      "texto": "PROFIT® acompaña la parte menos vistosa del deporte: la repetición. No la foto del récord, sino el martes a la mañana cuando no tenés ganas y vas igual. Ahí es donde se define todo, y ahí es donde queremos estar.",
+      "principios": [
+        { "titulo": "Se viene a mejorar, no a impresionar", "texto": "Nuestros productos no arrancan un proceso. Acompañan uno que vos ya empezaste." },
+        { "titulo": "Nada que no podamos probar", "texto": "Si una afirmación no está respaldada por el rótulo y la formulación, no la usamos." },
+        { "titulo": "Para el que arranca, el que compite y el que se cuida", "texto": "Misma calidad, misma dosis, mismo precio. No hay una línea buena para unos y una barata para otros." },
+        { "titulo": "Hecho acá", "texto": "Marca argentina, producción argentina y precio de mercado argentino." }
+      ]
+    },
+    "quienes_somos": {
+      "numero": "08",
+      "etiqueta": "Quiénes somos",
+      "titulo": "Keating One S.R.L.",
+      "texto": "PROFIT® es una marca de Keating One S.R.L. Industria Argentina.",
+      "hechos": [
+        { "cifra": "{productos}", "texto": "Productos, organizados en {lineas} líneas." },
+        { "cifra": "AR", "texto": "Industria Argentina." },
+        { "cifra": "Todo el país", "texto": "En farmacias y dietéticas." },
+        { "cifra": "Planta propia", "texto": "pendiente — confirmar con documento (pendientes #22)" }
+      ],
+      "certificaciones_titulo": "Certificaciones y registros",
+      "certificaciones": [
+        { "titulo": "ISO 22000", "texto": "pendiente — confirmar con documento (pendientes #22)" },
+        { "titulo": "RNE / RNPA", "texto": "pendiente — cargar por producto (pendientes #6)" }
+      ]
+    },
     "lo_que_no_vas_a_leer": {
+      "numero": "09",
+      "etiqueta": "Cómo lo hacemos",
       "titulo": "Lo que no vas a leer en nuestros envases.",
       "bajada": "Un suplemento no cura, no reemplaza una comida y no arregla un mal entrenamiento.",
       "no_titulo": "No vas a leer",
@@ -97,34 +166,48 @@
       "_validar_regulatorio": "Bloque pendiente de validación (pendientes #9). Se sacó 'Vitamina C, que contribuye a la formación normal de colágeno' hasta que la aprueben."
     },
     "una_vez": {
+      "numero": "10",
+      "etiqueta": "Dónde comprar",
       "titulo": "¿Preferís comprar una sola vez?",
       "texto": "PROFIT® está en la tienda oficial de Mercado Libre y en farmacias y dietéticas de todo el país.",
+      "canales": ["Tienda oficial de Mercado Libre, a precio sugerido", "Farmacias", "Dietéticas"],
       "boton_ml": "Tienda oficial de Mercado Libre",
       "sin_puntos": "Escribinos y te decimos dónde conseguirlo cerca tuyo.",
       "boton_whatsapp": "Preguntar por WhatsApp",
-      "mensaje_whatsapp": "Hola, quiero saber dónde conseguir PROFIT cerca mío"
+      "mensaje_whatsapp": "Hola, quiero saber dónde conseguir PROFIT cerca mío",
+      "filtro": "Provincia",
+      "filtro_todas": "Todas",
+      "mapa": "Ver en el mapa"
     },
     "preguntas": {
+      "numero": "11",
+      "etiqueta": "Preguntas",
       "titulo": "Preguntas frecuentes",
       "lista": [
         { "p": "¿Cómo funciona la suscripción?", "r": "Elegís el producto y la frecuencia, te suscribís con Mercado Pago y el cobro se repite cada 30 o 60 días." },
         { "p": "¿La puedo cancelar?", "r": "Sí. La das de baja cuando quieras desde tu cuenta de Mercado Pago, en la sección Suscripciones." },
         { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido." },
         { "p": "¿Cuándo llega y cuánto cuesta el envío?", "r": "pendiente" },
+        { "p": "¿Dónde lo compro si no me quiero suscribir?", "r": "En la tienda oficial de Mercado Libre y en farmacias y dietéticas de todo el país." },
         { "p": "¿Cómo se toma?", "r": "Seguí el modo de uso que figura en el rótulo de cada producto." },
         { "p": "¿Tiene TACC?", "r": "Cada producto muestra los sellos de su rótulo, incluido 'Libre de gluten' cuando corresponde." },
+        { "p": "¿Con qué lo combino?", "r": "Con la línea que sigue en el ciclo del entrenamiento: después de Fuerza viene Recuperación. Lo ves en 'Completá el ciclo'." },
         { "p": "¿Lo puedo tomar si…?", "r": "Consultá a tu médico o farmacéutico." },
         { "p": "¿Quién lo elabora?", "r": "Keating One S.R.L. Industria Argentina." },
         { "p": "Tengo un comercio, ¿cómo vendo PROFIT®?", "r": "Completá el formulario de 'Quiero vender PROFIT®' y te escribimos por WhatsApp." }
       ]
     },
     "quiero_vender": {
+      "numero": "12",
+      "etiqueta": "Red comercial",
       "titulo": "Quiero vender PROFIT®",
-      "texto": "Para farmacias, dietéticas, distribuidores, tiendas deportivas, gimnasios y cadenas: condiciones mayoristas, material de exhibición y capacitación de producto para tu equipo.",
+      "texto": "Si tenés farmacia, dietética, distribuidora, tienda deportiva, gimnasio o cadena: condiciones mayoristas, material de exhibición y capacitación de producto para tu equipo.",
+      "lista": ["Condiciones mayoristas", "Material de exhibición", "Capacitación de producto"],
+      "form_titulo": "Pedir información comercial",
       "tipos": ["Farmacia", "Dietética", "Distribuidor", "Tienda deportiva", "Gimnasio", "Cadena", "Otro"],
       "campos": { "comercio": "Comercio o razón social", "tipo": "Tipo de negocio", "localidad": "Localidad y provincia", "nombre": "Nombre de contacto", "whatsapp": "Tu WhatsApp" },
       "boton": "Enviar por WhatsApp",
-      "promesa": "Te respondemos en menos de 2 horas hábiles."
+      "promesa": "Te respondemos en menos de 2 horas hábiles. Usamos tus datos únicamente para el contacto comercial."
     },
     "arrepentimiento": {
       "link": "Botón de arrepentimiento",
@@ -135,6 +218,14 @@
       "texto": "Defensa de las y los consumidores",
       "url": "https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
     },
+    "footer": {
+      "whatsapp": "WhatsApp comercial",
+      "whatsapp_detalle": "Suscripciones, puntos de venta y consultas.",
+      "email": "Email",
+      "elaborado": "Elaborado por",
+      "secciones": "Secciones",
+      "legales": "Legales"
+    },
     "whatsapp_flotante": "Hola, quiero consultar por la suscripción PROFIT"
   },
   "medicion": {
@@ -142,5 +233,9 @@
     "ga4_id": "pendiente",
     "tiktok_pixel_id": "pendiente",
     "meta_pixel_id": "pendiente"
+  },
+  "seo": {
+    "_leeme": "La URL pública hace falta para el sitemap, la URL canónica y la imagen de vista previa. Cargarla cuando esté el dominio (pendientes #34).",
+    "url_publica": "pendiente"
   }
 }

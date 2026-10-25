@@ -23,7 +23,9 @@ Antes de tocar estructura, leé `docs/02_brief_sitio.md`. Antes de publicar, rev
 - Sitio principal (más adelante): Next.js (App Router) + TypeScript + Tailwind CSS. Deploy en Vercel.
 - Todo el contenido sale de `data/*.json`. No hardcodear textos, precios ni datos de producto en los componentes.
 - Packshots optimizados en `public/packshots/web/` (`<slug>-768.jpg` y `<slug>-384.jpg`). Si se cambia un packshot, regenerar los dos JPG.
-- `precio.publicar: false` oculta el precio de un producto. Un `packshot` en `"pendiente…"` muestra el placeholder "PACKSHOT EN REVISIÓN".
+- `precio.publicar: false` oculta el precio de un producto. La denominación de venta aparece cuando se borra `denominacion_estado` (verificada contra el rótulo).
+- Publicación: `.htaccess` en la raíz y `?v=AAAAMMDD` en los `<link>` y `<script>` de `index.html`; cambiar la fecha en cada deploy.
+- Un `packshot` en `"pendiente…"` muestra el placeholder "PACKSHOT EN REVISIÓN".
 - Mobile first: el tráfico entra desde TikTok e Instagram. El objetivo es Lighthouse mobile ≥ 90.
 - Un campo con valor `"pendiente"` (o que empiece con `"pendiente"`) **no se renderiza**. La sección se oculta sin dejar huecos.
 - Los campos `notas`, `_leeme`, `denominacion_estado`, `precio.regla`, `precio.fuente` y `precio.estado` son **internos**: nunca se muestran en la web.

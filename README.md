@@ -22,6 +22,14 @@ y abrir http://localhost:8080.
 - Píxeles: cargá los IDs de GA4, TikTok y Meta en `data/suscripcion.json` → `medicion`. Eventos: `view_item`, `select_variant`, `click_suscripcion`, `click_whatsapp`, `click_mercadolibre`, `click_donde_comprar`, `lead_mayorista`.
 - Antes de publicar, revisá la sección "Landing de suscripción" de `docs/03_pendientes_antes_de_publicar.md`.
 
+**Al subir cambios (Hostinger u otro Apache):**
+
+- `.htaccess` evita que el hosting muestre una versión vieja: subilo siempre junto con la página.
+- Cada vez que cambies `assets/styles.css` o `assets/app.js`, cambiá la fecha de `?v=` en `index.html` (por ejemplo `?v=20261101`). Si cambiás solo `data/`, cambiá también `"version"` en `data/suscripcion.json`.
+- Cuando esté el dominio, cargalo en `data/suscripcion.json` → `seo.url_publica` y sumá la línea `Sitemap:` en `robots.txt`.
+- La imagen para compartir en redes (`public/og/og-profit.jpg`) se regenera con `powershell -ExecutionPolicy Bypass -File tools\og-image.ps1`.
+- La denominación de venta de cada producto se muestra recién cuando se borra su `denominacion_estado` en `productos.json` (es decir, cuando ya se verificó contra el rótulo).
+
 ---
 
 Este kit tiene todo lo que Claude Code necesita para armar el sitio. Las reglas de marca y las de ANMAT ya están cargadas, así que no hace falta repetirlas en cada pedido.

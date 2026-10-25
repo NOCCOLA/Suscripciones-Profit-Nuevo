@@ -60,3 +60,6 @@
 | 32 | Validar con regulatorio que la suscripción, sin descuento ni regalo, no se considera "beneficio" (Anexo IV, ítem 5). Ver también el #8 | B |
 | 33 | Link de la tienda oficial de Mercado Libre (`marca.json` → `mercado_libre_tienda_oficial_url`) para "¿Preferís comprar una sola vez?" | — |
 | 34 | Dominio o subdominio de la landing (por ejemplo, suscripcion.profitargentina.com.ar) y hosting | B |
+| 35 | Sitemap: necesita el dominio (#34). Cargar `seo.url_publica` en `data/suscripcion.json` y sumar `Sitemap:` en `robots.txt` | — |
+| 36 | Bloque "Blindaje y Bienestar: la misma molécula, dos historias" de la web expo: **no se usa**, porque las notas de Colágeno ACTION piden no mostrarlo nunca en la misma pieza que SKIN/GLOW. Si los dueños lo quieren, validar con regulatorio | — |
+| 37 | "Quiénes somos": "Planta propia en Saladillo", ISO 22000 y RNE/RNPA quedan ocultos hasta tener el documento (#6 y #22) | B para mostrarlos |
