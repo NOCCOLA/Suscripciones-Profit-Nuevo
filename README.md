@@ -25,7 +25,7 @@ y abrir http://localhost:8080.
 **Al subir cambios (Hostinger u otro Apache):**
 
 - `.htaccess` evita que el hosting muestre una versión vieja: subilo siempre junto con la página.
-- Cada vez que cambies `assets/styles.css` o `assets/app.js`, cambiá la fecha de `?v=` en `index.html` (por ejemplo `?v=20261101`). Si cambiás solo `data/`, cambiá también `"version"` en `data/suscripcion.json`.
+- Cada vez que cambies `assets/styles.css` o `assets/app.js`, cambiá la fecha de `?v=` en `index.html` (por ejemplo `?v=20261101`). Los archivos de `data/` se piden con esa misma versión: si cambiás solo `data/`, el `.htaccess` ya evita que se sirvan viejos, pero cambiar la fecha también ayuda.
 - Cuando esté el dominio, cargalo en `data/suscripcion.json` → `seo.url_publica` y sumá la línea `Sitemap:` en `robots.txt`.
 - La imagen para compartir en redes (`public/og/og-profit.jpg`) se regenera con `powershell -ExecutionPolicy Bypass -File tools\og-image.ps1`.
 - La denominación de venta de cada producto se muestra recién cuando se borra su `denominacion_estado` en `productos.json` (es decir, cuando ya se verificó contra el rótulo).

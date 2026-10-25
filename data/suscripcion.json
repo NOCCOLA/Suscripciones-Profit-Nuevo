@@ -203,9 +203,9 @@
       "titulo": "Preguntas frecuentes",
       "lista": [
         { "p": "¿Cómo funciona la suscripción?", "r": "Elegís el producto y la frecuencia, te suscribís con Mercado Pago y el cobro se repite cada 30 o 60 días." },
-        { "p": "¿El descuento se mantiene en cada envío?", "r": "pendiente", "r_promo": "pendiente — confirmar si el {pct}% se mantiene en todos los cobros del plan o solo mientras dure la promoción" },
         { "p": "¿La puedo cancelar?", "r": "Sí. La das de baja cuando quieras desde tu cuenta de Mercado Pago, en la sección Suscripciones." },
-        { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido.", "r_promo": "Sí. Suscribiéndote tenés {pct}% de descuento sobre el precio sugerido mientras dure la promoción." },
+        { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido.", "r_promo": "Sí. Si te suscribís mientras dure la promoción, tenés {pct}% de descuento sobre el precio sugerido en todos los cobros de tu plan." },
+        { "p": "¿El descuento se mantiene en cada envío?", "r": "pendiente", "r_promo": "Sí. Si te suscribís durante la promoción, el {pct}% de descuento se mantiene en todos los cobros de tu plan, aunque la promoción termine." },
         { "p": "¿Cuándo llega y cuánto cuesta el envío?", "r": "pendiente" },
         { "p": "¿Dónde lo compro si no me quiero suscribir?", "r": "En la tienda oficial de Mercado Libre y en farmacias y dietéticas de todo el país." },
         { "p": "¿Cómo se toma?", "r": "Seguí el modo de uso que figura en el rótulo de cada producto." },
