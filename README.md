@@ -132,3 +132,13 @@ Revisar `docs/03_pendientes_antes_de_publicar.md`. Los ítems marcados con **B**
 - La cuenta regresiva (horas, minutos y segundos) cuenta hasta `cierre`, igual para todos los visitantes. Al llegar a cero, el descuento deja de mostrarse y los precios vuelven al sugerido.
 - Sin fecha de cierre (`"cierre": "pendiente"`), el descuento queda fijo y no hay contador.
 - Los planes de Mercado Pago tienen que crearse con el precio de suscripción, no con el sugerido.
+
+## Publicar en Netlify
+
+La carpeta que se sube es `dist/`, no la raíz del repo: tiene solo lo que la página necesita y los `data/*.json` sin datos internos (precio comercio, notas, aclaraciones de pendientes, precios marcados para no publicar).
+
+1. Regenerar `dist/` después de cada cambio: `powershell -ExecutionPolicy Bypass -File tools\publicar.ps1`
+2. Opción rápida: arrastrar la carpeta `dist` a https://app.netlify.com/drop
+3. Opción automática: en Netlify, "Import from Git" con este repo, **Build command** vacío y **Publish directory** `dist`. Cada push a `main` se publica solo.
+
+`dist/_headers` hace en Netlify lo mismo que el `.htaccess` en Hostinger.

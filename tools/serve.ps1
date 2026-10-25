@@ -1,8 +1,9 @@
 # Servidor estático mínimo para probar la página en local (sin Node ni Python).
-# Uso: powershell -ExecutionPolicy Bypass -File tools\serve.ps1 [-Port 8080]
-param([int]$Port = 8080)
+# Uso: powershell -ExecutionPolicy Bypass -File tools\serve.ps1 [-Port 8080] [-Carpeta dist]
+param([int]$Port = 8080, [string]$Carpeta = "")
 
 $root = Split-Path -Parent $PSScriptRoot
+if ($Carpeta) { $root = [IO.Path]::GetFullPath((Join-Path $root $Carpeta)) }
 $types = @{
   ".html" = "text/html; charset=utf-8"; ".css" = "text/css; charset=utf-8"; ".js" = "text/javascript; charset=utf-8"
   ".json" = "application/json; charset=utf-8"; ".png" = "image/png"; ".jpg" = "image/jpeg"; ".svg" = "image/svg+xml"

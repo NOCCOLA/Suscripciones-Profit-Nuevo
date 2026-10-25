@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /reference/
+Disallow: /tools/
+# Sumar "Sitemap: https://<dominio>/sitemap.xml" cuando esté el dominio definitivo (pendientes #34).

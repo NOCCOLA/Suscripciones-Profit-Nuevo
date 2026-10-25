@@ -1,0 +1,13 @@
+/
+  Cache-Control: no-cache, must-revalidate
+/index.html
+  Cache-Control: no-cache, must-revalidate
+/assets/*
+  Cache-Control: no-cache, must-revalidate
+/data/*
+  Cache-Control: no-cache, must-revalidate
+/public/*
+  Cache-Control: public, max-age=2592000
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
