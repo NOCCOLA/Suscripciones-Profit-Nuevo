@@ -1,0 +1,36 @@
+{
+  "_leeme": "Datos de marca y contacto. Los 'pendiente' no se publican.",
+  "marca": "PROFIT®",
+  "elaborador": "Keating One S.R.L.",
+  "origen": "Industria Argentina",
+  "firma": "Rendimiento, constancia y bienestar.",
+  "concepto_campana": "Acá se viene a mejorar.",
+  "regla_firma_concepto": "Nunca en la misma sección/pieza.",
+  "frases_retiradas": [
+    "Mejor que ayer",
+    "Metele"
+  ],
+  "esencia": "PROFIT es una marca argentina de suplementación deportiva y bienestar que acompaña a quienes eligen superarse cada día. Desarrolla productos con formulaciones claras, dosis precisas y un propósito concreto: acompañar el rendimiento, la constancia y el bienestar en cada etapa.",
+  "whatsapp_comercial": "+5491160277603",
+  "compromiso_respuesta_comercial": "menos de 2 horas hábiles",
+  "email": "pendiente (la web expo usa hola@profitargentina.com.ar)",
+  "dominio": "pendiente (profit.com / profitargentina.com / profitargentina.com.ar)",
+  "instagram": "pendiente (@profit.argentina / @profitargentina / objetivo @profitsport)",
+  "tiktok": "pendiente (la web expo enlaza @profitargentina)",
+  "mercado_libre_tienda_oficial_url": "pendiente",
+  "cuit": "pendiente (la web expo dice 27-41801463-1: el prefijo 27 es de persona física, no de una S.R.L. — verificar)",
+  "certificaciones_a_confirmar": [
+    "ISO 22000",
+    "Planta propia en Saladillo, Buenos Aires",
+    "RNE / RNPA por producto",
+    "Sin TACC (sí figura en rótulos: 'Libre de gluten')"
+  ],
+  "leyenda_obligatoria_suplementos": "SUPLEMENTA DIETAS INSUFICIENTES. CONSULTE A SU MÉDICO Y/O FARMACÉUTICO.",
+  "disclaimer_footer_web_expo": "Este producto no reemplaza una alimentación variada y equilibrada ni la práctica de actividad física regular. Consultá a un profesional de la salud antes de iniciar cualquier suplementación.",
+  "tipografia": "Montserrat",
+  "colores_base": {
+    "tinta": "#0B0B0C",
+    "hueso": "#F2F1ED",
+    "blanco": "#FFFFFF"
+  }
+}

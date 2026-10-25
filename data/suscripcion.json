@@ -1,0 +1,146 @@
+{
+  "_leeme": "Configuración y textos de la landing de suscripción. Los valores 'pendiente' no se muestran. 'planes' tiene un link de plan de suscripción de Mercado Pago por producto y por frecuencia (se crean sin código en Mercado Pago > Suscripciones > Planes). Mientras un link esté 'pendiente', el botón de suscripción abre WhatsApp con el pedido armado. Sin descuentos ni regalos: necesitan OK de regulatorio (Disp. ANMAT 4980/05, Anexo IV, ítem 5).",
+  "producto_inicial": "creatina-monohidrato-300g",
+  "frecuencias_dias": [30, 60],
+  "planes": {
+    "creatina-monohidrato-300g": { "30": "pendiente", "60": "pendiente" },
+    "creatina-monohidrato-150g": { "30": "pendiente", "60": "pendiente" },
+    "creatina-monohidrato-1kg": { "30": "pendiente", "60": "pendiente" },
+    "creatina-monohidrato-naranja-200g": { "30": "pendiente", "60": "pendiente" },
+    "creatina-electrolitos-blue-citrus-200g": { "30": "pendiente", "60": "pendiente" },
+    "creatina-electrolitos-pink-twist-200g": { "30": "pendiente", "60": "pendiente" },
+    "whey-protein-vainilla-900g": { "30": "pendiente", "60": "pendiente" },
+    "true-protein-colageno-chocolate-900g": { "30": "pendiente", "60": "pendiente" },
+    "cafeina-performance-60-capsulas": { "30": "pendiente", "60": "pendiente" },
+    "carbo-power-fruit-punch-450g": { "30": "pendiente", "60": "pendiente" },
+    "magnesio-bisglicinato-60-capsulas": { "30": "pendiente", "60": "pendiente" },
+    "magnesio-citrato-60-capsulas": { "30": "pendiente", "60": "pendiente" },
+    "magnesio-integral-naranja-150g": { "30": "pendiente", "60": "pendiente" },
+    "glutamina-micronizada-150g": { "30": "pendiente", "60": "pendiente" },
+    "colageno-action-naranja-390g": { "30": "pendiente", "60": "pendiente" },
+    "colageno-flex-sin-sabor-360g": { "30": "pendiente", "60": "pendiente" },
+    "colageno-skin-limon-360g": { "30": "pendiente", "60": "pendiente" },
+    "colageno-glow-frutos-rojos-360g": { "30": "pendiente", "60": "pendiente" },
+    "one-multivitaminico-60-capsulas": { "30": "pendiente", "60": "pendiente" },
+    "gelatina-pura-sin-sabor-500g": { "30": "pendiente", "60": "pendiente" }
+  },
+  "textos": {
+    "barra_superior": "Suscripción PROFIT® · Lo recibís cada 30 o 60 días · Pagás con Mercado Pago",
+    "hero": {
+      "etiqueta": "Suscripción",
+      "bajada": "Elegí tu producto y cada cuánto lo querés recibir. Se paga con Mercado Pago y la gestionás desde tu cuenta.",
+      "boton": "Elegir mi producto",
+      "boton_secundario": "Cómo funciona"
+    },
+    "por_donde_empezar": {
+      "titulo": "¿Por dónde empezar?",
+      "opciones": [
+        { "necesidad": "Estoy empezando y no sé qué tomar", "respuesta": "Creatina y proteína.", "linea": "fuerza" },
+        { "necesidad": "Entreno varias veces por semana", "respuesta": "Magnesio y glutamina.", "linea": "recuperacion" },
+        { "necesidad": "Juego al pádel, corro o hago deportes de impacto", "respuesta": "Colágeno deportivo.", "linea": "blindaje" },
+        { "necesidad": "No entreno todos los días, pero me quiero cuidar", "respuesta": "Colágeno de uso diario y multivitamínico. No hace falta entrenar.", "linea": "bienestar" }
+      ],
+      "_validar_regulatorio": "Copy de la web expo pendiente de validación (pendientes #9). La frase 'Es lo que más evidencia tiene y lo que mejor funciona' quedó afuera hasta que la aprueben."
+    },
+    "selector": {
+      "titulo": "Armá tu suscripción",
+      "paso_linea": "Línea",
+      "paso_producto": "Producto",
+      "paso_variante": "Presentación y sabor",
+      "paso_frecuencia": "Cada cuánto lo recibís",
+      "frecuencia_opcion": "Cada {n} días",
+      "frecuencia_sugerida": "Coincide con las {n} {unidad} del envase",
+      "precio_microcopy": "Precio sugerido por envío",
+      "precio_no_disponible": "Consultá el precio por WhatsApp",
+      "boton_mp": "Suscribirme con Mercado Pago",
+      "boton_whatsapp": "Quiero suscribirme",
+      "boton_consulta": "Consultar por WhatsApp",
+      "nota_whatsapp": "Te respondemos por WhatsApp con el link de pago de tu suscripción.",
+      "link_una_vez": "¿Preferís comprar una sola vez?",
+      "foto_pendiente": "FOTO REAL PENDIENTE",
+      "packshot_pendiente": "PACKSHOT EN REVISIÓN",
+      "modo_de_uso": "Cómo se toma",
+      "ingredientes": "Ingredientes",
+      "rnpa": "RNPA",
+      "barra_fija_boton": "Suscribirme"
+    },
+    "como_funciona": {
+      "titulo": "Cómo funciona",
+      "pasos": [
+        { "cifra": "1", "titulo": "Elegís", "texto": "Producto, presentación y sabor." },
+        { "cifra": "2", "titulo": "Definís la frecuencia", "texto": "Cada 30 o cada 60 días." },
+        { "cifra": "3", "titulo": "Pagás con Mercado Pago", "texto": "El cobro se repite en cada período, al precio sugerido." },
+        { "cifra": "4", "titulo": "La cancelás cuando quieras", "texto": "Das de baja la suscripción desde tu cuenta de Mercado Pago, sin permanencia." },
+        { "cifra": "5", "titulo": "Envío", "texto": "pendiente — definir quién despacha, plazos y costo de envío" }
+      ]
+    },
+    "cuando_se_toma": {
+      "titulo": "Cuándo se toma",
+      "bajada": "Cinco líneas, ordenadas por el ciclo del entrenamiento."
+    },
+    "completa_el_ciclo": {
+      "titulo": "Completá el ciclo",
+      "bajada": "Lo que va al lado de lo que elegiste.",
+      "boton": "Ver"
+    },
+    "opiniones": {
+      "titulo": "Opiniones en Mercado Libre",
+      "link": "Ver en Mercado Libre"
+    },
+    "lo_que_no_vas_a_leer": {
+      "titulo": "Lo que no vas a leer en nuestros envases.",
+      "bajada": "Un suplemento no cura, no reemplaza una comida y no arregla un mal entrenamiento.",
+      "no_titulo": "No vas a leer",
+      "no": ["Dormí y recuperate mejor", "Mayor concentración", "Antiarrugas o rejuvenece la piel", "Alta absorción", "Resultados en 30 días"],
+      "si_titulo": "Sí vas a leer",
+      "si": ["5 g de creatina por porción", "30 porciones reales por envase", "Lista completa de ingredientes", "RNE y RNPA del producto"],
+      "_validar_regulatorio": "Bloque pendiente de validación (pendientes #9). Se sacó 'Vitamina C, que contribuye a la formación normal de colágeno' hasta que la aprueben."
+    },
+    "una_vez": {
+      "titulo": "¿Preferís comprar una sola vez?",
+      "texto": "PROFIT® está en la tienda oficial de Mercado Libre y en farmacias y dietéticas de todo el país.",
+      "boton_ml": "Tienda oficial de Mercado Libre",
+      "sin_puntos": "Escribinos y te decimos dónde conseguirlo cerca tuyo.",
+      "boton_whatsapp": "Preguntar por WhatsApp",
+      "mensaje_whatsapp": "Hola, quiero saber dónde conseguir PROFIT cerca mío"
+    },
+    "preguntas": {
+      "titulo": "Preguntas frecuentes",
+      "lista": [
+        { "p": "¿Cómo funciona la suscripción?", "r": "Elegís el producto y la frecuencia, te suscribís con Mercado Pago y el cobro se repite cada 30 o 60 días." },
+        { "p": "¿La puedo cancelar?", "r": "Sí. La das de baja cuando quieras desde tu cuenta de Mercado Pago, en la sección Suscripciones." },
+        { "p": "¿Tiene descuento?", "r": "No. La suscripción se cobra al precio sugerido." },
+        { "p": "¿Cuándo llega y cuánto cuesta el envío?", "r": "pendiente" },
+        { "p": "¿Cómo se toma?", "r": "Seguí el modo de uso que figura en el rótulo de cada producto." },
+        { "p": "¿Tiene TACC?", "r": "Cada producto muestra los sellos de su rótulo, incluido 'Libre de gluten' cuando corresponde." },
+        { "p": "¿Lo puedo tomar si…?", "r": "Consultá a tu médico o farmacéutico." },
+        { "p": "¿Quién lo elabora?", "r": "Keating One S.R.L. Industria Argentina." },
+        { "p": "Tengo un comercio, ¿cómo vendo PROFIT®?", "r": "Completá el formulario de 'Quiero vender PROFIT®' y te escribimos por WhatsApp." }
+      ]
+    },
+    "quiero_vender": {
+      "titulo": "Quiero vender PROFIT®",
+      "texto": "Para farmacias, dietéticas, distribuidores, tiendas deportivas, gimnasios y cadenas: condiciones mayoristas, material de exhibición y capacitación de producto para tu equipo.",
+      "tipos": ["Farmacia", "Dietética", "Distribuidor", "Tienda deportiva", "Gimnasio", "Cadena", "Otro"],
+      "campos": { "comercio": "Comercio o razón social", "tipo": "Tipo de negocio", "localidad": "Localidad y provincia", "nombre": "Nombre de contacto", "whatsapp": "Tu WhatsApp" },
+      "boton": "Enviar por WhatsApp",
+      "promesa": "Te respondemos en menos de 2 horas hábiles."
+    },
+    "arrepentimiento": {
+      "link": "Botón de arrepentimiento",
+      "mensaje": "Hola, quiero ejercer el derecho de arrepentimiento sobre mi suscripción PROFIT (Res. SCI 424/2020).",
+      "_leeme": "Obligatorio con venta propia (Res. SCI 424/2020, 10 días corridos). Validar con legales el circuito de baja y devolución."
+    },
+    "defensa_consumidor": {
+      "texto": "Defensa de las y los consumidores",
+      "url": "https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
+    },
+    "whatsapp_flotante": "Hola, quiero consultar por la suscripción PROFIT"
+  },
+  "medicion": {
+    "_leeme": "IDs públicos de los píxeles (se ven en el navegador de todos modos). Con 'pendiente' no se carga nada.",
+    "ga4_id": "pendiente",
+    "tiktok_pixel_id": "pendiente",
+    "meta_pixel_id": "pendiente"
+  }
+}

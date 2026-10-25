@@ -1,0 +1,98 @@
+{
+  "_leeme": "Sistema de 5 líneas (Sistema Cromático 2026). Los colores son navegación, no identidad: el logo va siempre en blanco o negro. Las frases de línea están EN EVALUACIÓN (Manual v2): dejarlas configurables.",
+  "lineas": [
+    {
+      "id": "energia",
+      "nombre": "Energía",
+      "orden": 1,
+      "momento": "Antes y durante",
+      "color_impresion": "#F5B301",
+      "color_pantalla_sobre_claro": "#8A6200",
+      "color_pantalla_sobre_oscuro": "#F5B301",
+      "frase_vigente": "Prendete",
+      "frase_alternativa_en_evaluacion": "Activá tu energía",
+      "que_es": "Combustible para la sesión. Se consume en el entrenamiento; no construye.",
+      "productos": [
+        "cafeina-performance-60-capsulas",
+        "carbo-power-fruit-punch-450g"
+      ]
+    },
+    {
+      "id": "fuerza",
+      "nombre": "Fuerza",
+      "orden": 2,
+      "momento": "Durante",
+      "color_impresion": "#CE1F2D",
+      "color_pantalla_sobre_claro": "#B81826",
+      "color_pantalla_sobre_oscuro": "#FF5A66",
+      "frase_vigente": "Tu base",
+      "frase_alternativa_en_evaluacion": "Construí tu rendimiento",
+      "que_es": "Creatina y proteína. La puerta de entrada de la marca.",
+      "productos": [
+        "creatina-monohidrato-300g",
+        "creatina-monohidrato-150g",
+        "creatina-monohidrato-1kg",
+        "creatina-monohidrato-naranja-200g",
+        "creatina-electrolitos-blue-citrus-200g",
+        "creatina-electrolitos-pink-twist-200g",
+        "whey-protein-vainilla-900g",
+        "true-protein-colageno-chocolate-900g"
+      ]
+    },
+    {
+      "id": "recuperacion",
+      "nombre": "Recuperación",
+      "orden": 3,
+      "momento": "Después",
+      "color_impresion": "#1B6CE0",
+      "color_pantalla_sobre_claro": "#1657B8",
+      "color_pantalla_sobre_oscuro": "#5FA0FF",
+      "frase_vigente": "Volvé antes",
+      "frase_alternativa_en_evaluacion": "Recuperá tu ritmo",
+      "que_es": "Magnesio y glutamina. Si te llevás el rojo, te falta el azul.",
+      "productos": [
+        "magnesio-bisglicinato-60-capsulas",
+        "magnesio-citrato-60-capsulas",
+        "magnesio-integral-naranja-150g",
+        "glutamina-micronizada-150g"
+      ]
+    },
+    {
+      "id": "blindaje",
+      "nombre": "Blindaje",
+      "orden": 4,
+      "momento": "Alrededor",
+      "color_impresion": "#0F5C3F",
+      "color_pantalla_sobre_claro": "#0F5C3F",
+      "color_pantalla_sobre_oscuro": "#35B183",
+      "frase_vigente": "Bancá el impacto",
+      "frase_alternativa_en_evaluacion": "Preparado para seguir",
+      "que_es": "Colágeno para el que entrena: deportes de impacto y frenada. Requisito: entrenar.",
+      "productos": [
+        "colageno-action-naranja-390g",
+        "colageno-flex-sin-sabor-360g"
+      ]
+    },
+    {
+      "id": "bienestar",
+      "nombre": "Bienestar",
+      "orden": 5,
+      "momento": "Todos los días",
+      "color_impresion": "#6C4CD1",
+      "color_pantalla_sobre_claro": "#5B3CBE",
+      "color_pantalla_sobre_oscuro": "#AC96F2",
+      "frase_vigente": "Todos los días",
+      "frase_alternativa_en_evaluacion": "Bienestar todos los días",
+      "que_es": "Colágeno de uso diario y multivitamínico. Sin requisito de entrenar.",
+      "productos": [
+        "colageno-skin-limon-360g",
+        "colageno-glow-frutos-rojos-360g",
+        "one-multivitaminico-60-capsulas",
+        "gelatina-pura-sin-sabor-500g"
+      ]
+    }
+  ],
+  "accesorios": {
+    "color": "blanco y negro"
+  }
+}

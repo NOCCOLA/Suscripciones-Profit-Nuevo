@@ -1,0 +1,1051 @@
+{
+  "_leeme": "Fuente única de datos de producto. Los campos con 'pendiente' NO se muestran en la web. Precios: Lista Única Ago 2026 / Lista Sep 2026 — confirmar lista vigente antes de publicar. Packshots en /public/packshots. El campo 'notas' es INTERNO: nunca se renderiza en la web.",
+  "productos": [
+    {
+      "slug": "creatina-monohidrato-300g",
+      "grupo": "creatina-monohidrato",
+      "nombre": "Creatina Monohidrato",
+      "variante": "300 g · Sin sabor",
+      "linea": "fuerza",
+      "formato": "Pote 300 g",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "60",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "100% pura",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de creatina monohidrato. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 22300,
+        "pvp_sugerido": 39125.35,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-monohidrato-300g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": [
+        "Producto héroe sugerido para la ficha plantilla (mayor rotación de la marca)."
+      ]
+    },
+    {
+      "slug": "creatina-monohidrato-150g",
+      "grupo": "creatina-monohidrato",
+      "nombre": "Creatina Monohidrato",
+      "variante": "150 g · Sin sabor",
+      "linea": "fuerza",
+      "formato": "Pote 150 g",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "100% pura",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de creatina monohidrato. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 13900,
+        "pvp_sugerido": 24387.55,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-monohidrato-150g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": [
+        "El catálogo menciona también doypack 300 g: no hay packshot ni precio en este kit."
+      ]
+    },
+    {
+      "slug": "creatina-monohidrato-1kg",
+      "grupo": "creatina-monohidrato",
+      "nombre": "Creatina Monohidrato",
+      "variante": "1 kg · Sin sabor",
+      "linea": "fuerza",
+      "formato": "Pote 1 kg",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "200",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "100% pura",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de creatina monohidrato. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 59000,
+        "pvp_sugerido": 103515.5,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-monohidrato-1kg.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "creatina-monohidrato-naranja-200g",
+      "grupo": "creatina-monohidrato",
+      "nombre": "Creatina Monohidrato",
+      "variante": "200 g · Sabor naranja",
+      "linea": "fuerza",
+      "formato": "Pote 200 g",
+      "sabor": "Naranja",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "pendiente",
+      "denominacion_estado": "no legible en el packshot — copiar del rótulo",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 13900,
+        "pvp_sugerido": 24387.55,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-monohidrato-naranja-200g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "creatina-electrolitos-blue-citrus-200g",
+      "grupo": "creatina-electrolitos",
+      "nombre": "Creatina + Electrolitos",
+      "variante": "200 g · Blue Citrus",
+      "linea": "fuerza",
+      "formato": "Pote 200 g",
+      "sabor": "Blue Citrus",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "335 mg",
+          "etiqueta": "de electrolitos"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "pendiente",
+      "denominacion_estado": "no legible en el packshot — copiar del rótulo",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 16400,
+        "pvp_sugerido": 28773.8,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-electrolitos-blue-citrus-200g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": [
+        "En combos figura como 'Blue Lemon'; el nombre correcto es Blue Citrus."
+      ]
+    },
+    {
+      "slug": "creatina-electrolitos-pink-twist-200g",
+      "grupo": "creatina-electrolitos",
+      "nombre": "Creatina + Electrolitos",
+      "variante": "200 g · Pink Twist",
+      "linea": "fuerza",
+      "formato": "Pote 200 g",
+      "sabor": "Pink Twist",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de creatina por porción"
+        },
+        {
+          "valor": "335 mg",
+          "etiqueta": "de electrolitos"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de creatina monohidrato y minerales sabor frutilla limón. Libre de gluten.",
+      "denominacion_estado": "lectura parcial del packshot — verificar contra el rótulo",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 16400,
+        "pvp_sugerido": 28773.8,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/creatina-electrolitos-pink-twist-200g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "magnesio-bisglicinato-60-capsulas",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "whey-protein-vainilla-900g",
+      "grupo": "whey-protein",
+      "nombre": "100% Whey Protein",
+      "variante": "900 g · Vainilla",
+      "linea": "fuerza",
+      "formato": "Pote 900 g",
+      "sabor": "Vainilla",
+      "datos_rotulo": [
+        {
+          "valor": "100%",
+          "etiqueta": "whey"
+        },
+        {
+          "valor": "20 g",
+          "etiqueta": "de proteína por porción"
+        },
+        {
+          "valor": "25",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de proteínas de suero de leche sabor vainilla. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 49900,
+        "pvp_sugerido": 87549.55,
+        "publicar": false,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/whey-protein-vainilla-900g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "magnesio-citrato-60-capsulas"
+      ],
+      "notas": [
+        "ALERTA: el precio comercio ($49.900) está por debajo del costo de fábrica ($56.800). No publicar precio hasta resolverlo."
+      ]
+    },
+    {
+      "slug": "true-protein-colageno-chocolate-900g",
+      "grupo": "true-protein",
+      "nombre": "True Protein + Colágeno",
+      "variante": "900 g · Chocolate",
+      "linea": "fuerza",
+      "formato": "Pote 900 g",
+      "sabor": "Chocolate",
+      "datos_rotulo": [
+        {
+          "valor": "22 g",
+          "etiqueta": "de proteína por porción"
+        },
+        {
+          "valor": "10 g",
+          "etiqueta": "de colágeno por porción"
+        },
+        {
+          "valor": "25",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de proteínas de suero de leche y colágeno hidrolizado sabor chocolate. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 44200,
+        "pvp_sugerido": 77548.9,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/true-protein-colageno-chocolate-900g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "magnesio-citrato-60-capsulas"
+      ],
+      "notas": [
+        "Diferencial aprobado: hecho con cacao ('hecho con cacao, no con sabor a cacao'). Va en FUERZA, no en Blindaje."
+      ]
+    },
+    {
+      "slug": "cafeina-performance-60-capsulas",
+      "grupo": "cafeina",
+      "nombre": "Cafeína Performance",
+      "variante": "60 cápsulas",
+      "linea": "energia",
+      "formato": "60 cápsulas",
+      "sabor": "—",
+      "datos_rotulo": [
+        {
+          "valor": "200 mg",
+          "etiqueta": "de cafeína"
+        },
+        {
+          "valor": "60",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de cafeína en cápsulas. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 14300,
+        "pvp_sugerido": 25089.35,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/cafeina-performance-60-capsulas.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "carbo-power-fruit-punch-450g",
+        "creatina-monohidrato-300g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "carbo-power-fruit-punch-450g",
+      "grupo": "carbo-power",
+      "nombre": "Carbo Power",
+      "variante": "450 g · Fruit Punch",
+      "linea": "energia",
+      "formato": "Pote 450 g",
+      "sabor": "Fruit Punch",
+      "datos_rotulo": [
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        },
+        {
+          "valor": "Sodio · Potasio · Magnesio",
+          "etiqueta": ""
+        }
+      ],
+      "sellos_rotulo": [
+        "Bebida isotónica",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento hidroelectrolítico dietético en polvo con 450 mg/L de sodio, 120 mg/L de potasio, 28 mg/L de magnesio y vitamina C [...]",
+      "denominacion_estado": "lectura parcial del packshot — completar del rótulo",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 14200,
+        "pvp_sugerido": 24913.9,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/carbo-power-fruit-punch-450g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "cafeina-performance-60-capsulas",
+        "creatina-monohidrato-300g"
+      ],
+      "notas": [
+        "El catálogo de WhatsApp dice '1 kg · Cítrico'; el rótulo dice 450 g · Fruit Punch. Manda el rótulo."
+      ]
+    },
+    {
+      "slug": "magnesio-bisglicinato-60-capsulas",
+      "grupo": "magnesio",
+      "nombre": "Magnesio Bisglicinato",
+      "variante": "60 cápsulas",
+      "linea": "recuperacion",
+      "formato": "60 cápsulas",
+      "sabor": "—",
+      "datos_rotulo": [
+        {
+          "valor": "500 mg",
+          "etiqueta": "de bisglicinato"
+        },
+        {
+          "valor": "60",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de bisglicinato de magnesio en cápsulas. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 15900,
+        "pvp_sugerido": 27896.55,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/magnesio-bisglicinato-60-capsulas.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "glutamina-micronizada-150g"
+      ],
+      "notas": [
+        "Diferencial vs ENA: el bisglicinato no está en su catálogo (dato para material B2B, no para comparar en la web)."
+      ]
+    },
+    {
+      "slug": "magnesio-citrato-60-capsulas",
+      "grupo": "magnesio",
+      "nombre": "Magnesio Citrato",
+      "variante": "60 cápsulas",
+      "linea": "recuperacion",
+      "formato": "60 cápsulas",
+      "sabor": "—",
+      "datos_rotulo": [
+        {
+          "valor": "500 mg",
+          "etiqueta": "de citrato"
+        },
+        {
+          "valor": "60",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de citrato de magnesio en cápsulas. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 15800,
+        "pvp_sugerido": 27721.1,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/magnesio-citrato-60-capsulas.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "glutamina-micronizada-150g"
+      ],
+      "notas": [
+        "El catálogo de WhatsApp lo describe como polvo 200 g; el rótulo dice 60 cápsulas. Manda el rótulo."
+      ]
+    },
+    {
+      "slug": "magnesio-integral-naranja-150g",
+      "grupo": "magnesio",
+      "nombre": "Magnesio Integral",
+      "variante": "150 g · Naranja",
+      "linea": "recuperacion",
+      "formato": "Pote 150 g",
+      "sabor": "Naranja",
+      "datos_rotulo": [
+        {
+          "valor": "260 mg",
+          "etiqueta": "de magnesio"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de magnesio sabor naranja. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 10900,
+        "pvp_sugerido": 19124.05,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/magnesio-integral-naranja-150g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "glutamina-micronizada-150g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "glutamina-micronizada-150g",
+      "grupo": "glutamina",
+      "nombre": "Glutamina Micronizada",
+      "variante": "150 g · Sin sabor",
+      "linea": "recuperacion",
+      "formato": "Pote 150 g",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "5 g",
+          "etiqueta": "de L-glutamina por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "ingestas"
+        }
+      ],
+      "sellos_rotulo": [
+        "100% pura",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de L-Glutamina. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 17200,
+        "pvp_sugerido": 30177.4,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "pendiente — el arte dice 5 g DE CRETATINA: corregir antes de usar /packshots/glutamina-micronizada-150g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "magnesio-bisglicinato-60-capsulas"
+      ],
+      "notas": [
+        "ERROR EN EL ARTE: el packshot dice '5 g DE CRETATINA'. No usar esa imagen en la web hasta corregir el arte.",
+        "El catálogo de WhatsApp dice 300 g / 60 porciones; el rótulo dice 150 g / 30 ingestas."
+      ]
+    },
+    {
+      "slug": "colageno-action-naranja-390g",
+      "grupo": "colageno-blindaje",
+      "nombre": "Colágeno ACTION",
+      "variante": "390 g · Naranja",
+      "linea": "blindaje",
+      "formato": "Pote 390 g",
+      "sabor": "Naranja",
+      "datos_rotulo": [
+        {
+          "valor": "10 g",
+          "etiqueta": "de colágeno por porción"
+        },
+        {
+          "valor": "500 mg",
+          "etiqueta": "de vitamina C"
+        }
+      ],
+      "sellos_rotulo": [
+        "Ácido hialurónico · Vitamina C · Magnesio · Cúrcuma",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo dietético a base de colágeno hidrolizado, vitamina C, magnesio, cúrcuma y ácido hialurónico, sabor naranja. Libre de gluten.",
+      "denominacion_estado": "lectura parcial del packshot — verificar contra el rótulo",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 24300,
+        "pvp_sugerido": 42634.35,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/colageno-action-naranja-390g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "colageno-flex-sin-sabor-360g"
+      ],
+      "notas": [
+        "Gramaje: el rótulo dice 390 g (la lista de fábrica dice 360 g).",
+        "Se exhibe al lado de la creatina. Nunca en la misma pieza que SKIN/GLOW.",
+        "'Blindaje Articular' sigue en revisión legal: no usar."
+      ]
+    },
+    {
+      "slug": "colageno-flex-sin-sabor-360g",
+      "grupo": "colageno-blindaje",
+      "nombre": "Colágeno FLEX",
+      "variante": "360 g · Sin sabor",
+      "linea": "blindaje",
+      "formato": "Pote 360 g",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "10 g",
+          "etiqueta": "de colágeno por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Vitamina C + D + Zinc",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo a base de colágeno hidrolizado, vitamina C, D y zinc. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 23500,
+        "pvp_sugerido": 41230.75,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/colageno-flex-sin-sabor-360g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "creatina-monohidrato-300g",
+        "colageno-action-naranja-390g"
+      ],
+      "notas": []
+    },
+    {
+      "slug": "colageno-skin-limon-360g",
+      "grupo": "colageno-bienestar",
+      "nombre": "Colágeno SKIN",
+      "variante": "360 g · Limón",
+      "linea": "bienestar",
+      "formato": "Pote 360 g",
+      "sabor": "Limón",
+      "datos_rotulo": [
+        {
+          "valor": "10 g",
+          "etiqueta": "de colágeno por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Coenzima Q10 + Vitamina C + D + Zinc",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo a base de colágeno hidrolizado, coenzima Q10, vitamina C, D y zinc sabor limón. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 23500,
+        "pvp_sugerido": 41230.75,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/colageno-skin-limon-360g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "one-multivitaminico-60-capsulas",
+        "colageno-glow-frutos-rojos-360g"
+      ],
+      "notas": [
+        "Prohibido: 'antiarrugas', 'rejuvenece la piel' o cualquier efecto estético."
+      ]
+    },
+    {
+      "slug": "colageno-glow-frutos-rojos-360g",
+      "grupo": "colageno-bienestar",
+      "nombre": "Colágeno GLOW",
+      "variante": "360 g · Frutos rojos",
+      "linea": "bienestar",
+      "formato": "Pote 360 g",
+      "sabor": "Frutos rojos",
+      "datos_rotulo": [
+        {
+          "valor": "10 g",
+          "etiqueta": "de colágeno por porción"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Coenzima Q10 + Vitamina C + D + Zinc",
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario en polvo a base de colágeno hidrolizado, coenzima Q10, vitamina C, D y zinc sabor frutos rojos. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 24500,
+        "pvp_sugerido": 42985.25,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/colageno-glow-frutos-rojos-360g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "one-multivitaminico-60-capsulas",
+        "colageno-skin-limon-360g"
+      ],
+      "notas": [
+        "Prohibido: 'antiarrugas', 'rejuvenece la piel' o cualquier efecto estético."
+      ]
+    },
+    {
+      "slug": "one-multivitaminico-60-capsulas",
+      "grupo": "one",
+      "nombre": "ONE Multivitamínico",
+      "variante": "60 cápsulas",
+      "linea": "bienestar",
+      "formato": "60 cápsulas",
+      "sabor": "—",
+      "datos_rotulo": [
+        {
+          "valor": "23",
+          "etiqueta": "vitaminas y minerales"
+        },
+        {
+          "valor": "30",
+          "etiqueta": "porciones"
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Suplemento dietario a base de vitaminas y minerales en cápsulas. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": true,
+      "precio": {
+        "comercio_sin_iva": 18300,
+        "pvp_sugerido": 32107.35,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/one-multivitaminico-60-capsulas.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "colageno-skin-limon-360g",
+        "colageno-glow-frutos-rojos-360g"
+      ],
+      "notas": [
+        "60 cápsulas / 30 porciones: NO decir 'una cápsula por día'."
+      ]
+    },
+    {
+      "slug": "gelatina-pura-sin-sabor-500g",
+      "grupo": "gelatina",
+      "nombre": "Gelatina 100% Pura",
+      "variante": "500 g · Sin sabor",
+      "linea": "bienestar",
+      "formato": "Pote 500 g",
+      "sabor": "Sin sabor",
+      "datos_rotulo": [
+        {
+          "valor": "100%",
+          "etiqueta": "pura"
+        },
+        {
+          "valor": "500 g",
+          "etiqueta": ""
+        }
+      ],
+      "sellos_rotulo": [
+        "Libre de gluten",
+        "Industria Argentina"
+      ],
+      "denominacion_rotulo": "Polvo para preparar gelatina sin sabor. Libre de gluten.",
+      "denominacion_estado": "leída del packshot — verificar contra el rótulo aprobado antes de publicar",
+      "es_suplemento_dietario": false,
+      "precio": {
+        "comercio_sin_iva": 23500,
+        "pvp_sugerido": 41230.75,
+        "regla": "PVP = precio comercio × 1,21 (IVA) × 1,45",
+        "fuente": "Lista Única Ago 2026 / Lista Sep 2026",
+        "estado": "confirmar contra la lista vigente antes de publicar"
+      },
+      "packshot": "/packshots/gelatina-pura-sin-sabor-500g.png",
+      "compra": {
+        "modo": "ml",
+        "ml_url": "pendiente"
+      },
+      "rnpa": "pendiente",
+      "ean": "pendiente",
+      "modo_de_uso": "pendiente — copiar textual del rótulo",
+      "ingredientes": "pendiente — copiar textual del rótulo",
+      "tabla_nutricional": "pendiente",
+      "cross_sell": [
+        "one-multivitaminico-60-capsulas",
+        "colageno-skin-limon-360g"
+      ],
+      "notas": [
+        "No es suplemento dietario según su rótulo: no usar lenguaje de suplementación.",
+        "Línea a confirmar (Bienestar o Blindaje)."
+      ]
+    }
+  ],
+  "pendientes_de_alta": [
+    {
+      "nombre": "Vitamina C + D + Zinc · Display x15 sobres",
+      "linea": "bienestar",
+      "comercio_sin_iva": 8667,
+      "pvp_sugerido_display": 15206.25,
+      "estado": "no publicar: sin packshot, sin EAN, precio comercio a confirmar"
+    },
+    {
+      "nombre": "Magnesio + Potasio · Display x15 sobres",
+      "linea": "recuperacion (la lista lo ubica en Bienestar: confirmar)",
+      "comercio_sin_iva": 9200,
+      "pvp_sugerido_display": 16141.4,
+      "estado": "no publicar: sin packshot, sin EAN, precio comercio a confirmar"
+    },
+    {
+      "nombre": "Super C · Display x10 sobres (marca SUPER C)",
+      "linea": "—",
+      "comercio_sin_iva": 5200,
+      "pvp_sugerido_display": 9123.4,
+      "estado": "otra marca: definir si va en la web de PROFIT"
+    },
+    {
+      "nombre": "Shakers PROFIT (400 / 450 / 750 ml)",
+      "linea": "accesorios",
+      "estado": "nombres y precios a confirmar"
+    }
+  ]
+}

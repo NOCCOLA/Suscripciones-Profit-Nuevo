@@ -1,0 +1,13 @@
+{
+  "_leeme": "Solo reseñas REALES copiadas textual de la tienda oficial de Mercado Libre (o de otra fuente verificable), con fecha y link. Nunca inventar ni reescribir. Vacío = la sección no se muestra.",
+  "resenas": [],
+  "ejemplo_formato": {
+    "producto_slug": "creatina-monohidrato-300g",
+    "texto": "copiar textual",
+    "autor_como_figura": "",
+    "estrellas": 5,
+    "fecha": "AAAA-MM-DD",
+    "fuente": "Mercado Libre",
+    "url": ""
+  }
+}

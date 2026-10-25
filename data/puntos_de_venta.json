@@ -1,0 +1,13 @@
+{
+  "_leeme": "Puntos de venta para 'Dónde comprar'. Cargar SOLO los que aceptaron figurar. Vacío = la sección muestra solo Mercado Libre + WhatsApp.",
+  "puntos": [],
+  "ejemplo_formato": {
+    "nombre": "Farmacia Ejemplo",
+    "tipo": "farmacia | dietetica | tienda-deportiva | gimnasio",
+    "direccion": "",
+    "localidad": "",
+    "provincia": "",
+    "whatsapp": "",
+    "maps_url": ""
+  }
+}
